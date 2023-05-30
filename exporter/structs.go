@@ -2,7 +2,7 @@ package exporter
 
 import (
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/sapcc/nsx-t-exporter/config"
+	"github.com/e33ivanyauwai/nsx-t-exporter/config"
 )
 
 // Exporter is used to store Metrics data and embeds the config struct.
