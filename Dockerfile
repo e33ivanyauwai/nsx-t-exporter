@@ -9,7 +9,7 @@ WORKDIR /go/src/github.com/sapcc/github.com/sapcc/nsx-t-exporter
 
 RUN go get \
  && go test ./... \
- && go build -o /bin/start
+ && go build -o /bin/main
 
 FROM alpine:3.18
 
@@ -17,7 +17,7 @@ RUN apk --no-cache add ca-certificates \
  && addgroup nsxt \
  && adduser -S -G nsxt nsxt
 USER nsxt
-COPY --from=build /bin/start /bin/start
+COPY --from=build /bin/main /bin/main
 ENV LISTEN_PORT=9191
 EXPOSE 9191
-ENTRYPOINT [ "/bin/start" ]
+ENTRYPOINT [ "/bin/main" ]
