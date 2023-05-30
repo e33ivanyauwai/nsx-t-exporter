@@ -17,10 +17,9 @@ import (
 
 var (
 	indexPage = `<html>
-	<head><title>NSX-T Exporter</title></head>
+	<head><title>Cloud PaaS Infra's NSX-T Exporter</title></head>
 	<body>
 		<h1>NSX-T Prometheus Metrics Exporter</h1>
-		<p>For more information, visit <a href="https://github.com/sapcc/nsxv3-exporter">GitHub</a></p>
 		<p><a href="/metrics">Metrics</a></p>
 	</body>
 </html>`
