@@ -1,6 +1,6 @@
 # Prometheus NSX-T Management Node Exporter
 
-Exposes metrics from NSX-T Management Node REST API to a Prometheus compatible endpoint.
+Exposes metrics from NSX-T Management Node REST API to a Prometheus compatible endpoint.  This is a fork from the original main branch to customize for internal use.
 
 ## Exporter Configuration
 
@@ -21,7 +21,7 @@ NSX-T Expoerter takes input from environment variables as:
 ## Build
 
 ```sh
-git clone https://github.com/sapcc/github.com/sapcc/nsx-t-exporter.git
+git clone https://github.com/e33ivanyauwai/github.com/sapcc/nsx-t-exporter.git
 cd nsx-t-exporter
 docker build -t <image-name> .
 ```
