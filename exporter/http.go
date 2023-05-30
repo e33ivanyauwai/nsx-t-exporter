@@ -14,7 +14,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	nsxv3config "github.com/sapcc/nsx-t-exporter/config"
+	nsxv3config "github.com/e33ivanyauwai/nsx-t-exporter/config"
 	log "github.com/sirupsen/logrus"
 )
 
